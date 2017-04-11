@@ -1,0 +1,207 @@
+/******先重置n_content_left 里面查路线的bg**********/
+.n_content_left ul a:nth-child(1) li{
+	background-color: rgb(242,128,0);;
+}
+#way_wrap{
+	width: 100%;
+	margin:25px 0;
+}
+#way_wrap .w_content{
+	width: 1138px;
+	height: 271px;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+	background-color: white;
+	padding: 0 30px;
+}
+.w_content .w_row{
+	width: 1138px;
+	height: 59px;
+	line-height: 59px;
+	border-bottom: 1px solid #eee;
+}
+.w_row .row_active{
+	border: 1px solid #f28000;
+	color: #f28000;
+	border-radius: 8px;
+}
+.w_row a{
+	padding: 6px 8px;
+	font-size: 1em;
+	color: #5a5a5a;
+	margin: 0 10px 6px 0;
+	border:1px solid transparent;
+	border-radius: 3px;
+}
+.w_row span{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+}
+.w_content .row_subject{
+	height: 95px;
+	position: relative;
+}
+.w_content .row_days{
+	border-bottom: none;
+}
+.row_subject a:last-child{
+	display: inline-block;
+	width: 57px;
+	line-height: 18px;
+	height: 18px;
+	position: absolute;
+	left: 150px;
+	top: 50px;
+}
+.w_content .w_row a:hover{
+	color: #f28000;
+	border:1px solid #eee;
+}
+/*****筛选下面的详细信息******/
+#way_menu{
+	width: 100%;
+	height: 100%;
+}
+#way_menu .menu_center{
+	margin: 0 auto;
+	width: 1200px;
+	background-color: white;
+}
+.menu_center .menu_title{
+	height: 50px;
+	width: 1200px;
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	border-bottom: none;
+}
+.menu_title a{
+	font-size: 1em;
+	display: inline-block;
+	width: 108px;
+	height: 49px;
+	text-align: center;
+	line-height: 49px;
+	border-right:1px solid #ddd;
+}
+.menu_title a:hover{
+	color:#f28000;
+}
+.menu_price{
+	margin-left: -4px;
+	border-bottom:1px solid #ddd;
+	position: relative;
+}
+.menu_price .ico_order_prcie{
+	width: 10px;
+	height: 12px;
+	top: 18px;
+	left: 75px;
+	display: inline-block;
+	background-image: url(../imgs/ico-order-prcie.png);
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.menu_choose{
+	background-color: white;
+	color:#f28000;
+	border-bottom:1px solid white;
+}
+.item_left, .item_right{
+	width: 500px;
+	height: 320px;
+	float: left;
+	overflow: hidden;
+}
+.menu_item .item_left_img{
+	width: 530px;
+	height: 350px;
+	vertical-align: top;
+}
+.menu_item{
+	width: 1172px;
+	height: 320px;
+	padding: 30px 0 30px 30px;
+	overflow: hidden;
+}
+.item_right{
+	margin-left: 25px;
+	width: 608px;
+    height: 350px;
+    position: relative;
+}
+.item_right h3{
+	padding: 9px 0;
+}
+.item_right h3 a{
+	color: #5a5a5a;
+	font-size: 1.3em;
+}
+.item_right_address{
+	margin-top: 8px;
+}
+.item_right_address span{
+	background: #56626a;
+	padding: 4px 7px;
+	color: white;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.item_right_table{
+	line-height: 33px;
+	margin-top: 16px;
+	color:#5a5a5a;
+}
+.item_right_table div span{
+	font-size: 0.9em;
+}
+.item_right_table div span:nth-child(1){
+	display: inline-block;
+	width: 110px;
+	height: 30px;
+}
+.item_right label{
+	position: absolute;
+	bottom: 30px;
+	color: #f28000;
+}
+.item_left_price{
+	font-size: 2.5em;
+}
+.btn_details{
+	position: absolute;
+	display: block;
+	width: 152px;
+	height: 38px;
+	background-color:#f28000;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 3px;
+	right: 0px;
+	bottom: 30px;
+	color: white;
+	font-size: 1.2em;
+	background-color: #f28000;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f39529), to(#f28000));
+}
+.btn_page_group{
+	margin: 30px 0 0 30px;
+}
+.btn_page_group a{
+	display: inline-block;
+	width: 32px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+}
+.btn_page_group .btn_page_group_active{
+	border:1px solid transparent;
+	color: #f28000;
+}
+.item_right h3:hover a{
+	color: #f28000;
+}

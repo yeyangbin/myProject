@@ -1,0 +1,64 @@
+<div class="header">
+	<div class="h_content">
+		<!--左边logo-->
+		<div class="h_content_left">
+			<a href="index.html"></a>
+			<div></div>
+		</div>
+		<!--右边搜索-->
+		<div class="h_content_right">
+			<form id="h_form_search" action="post">
+				<div>
+					<img src="../imgs/top/fangda.png" alt="" />
+					<input class="h_text_input" type="text" name="search_top" placeholder="搜索目的地、路线、主题"/>
+					<input class="h_search_input" type="button" value="搜索" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--首页导航栏-->
+	<div class="nav">
+		<div class="n_content">
+			<div class="n_content_left">
+				<ul>
+					<a href="index.php"><li>首页</li></a>
+					<a href="outdoor.php"><li>查线路</li></a>
+					<a href="custom.html"><li>要制定</li></a>
+					<a href="case.php"><li>用户说</li></a>
+				</ul>
+			</div>
+			<div class="n_content_right">
+				<div class="n_phone">
+					<img src="../imgs/top/phone.png" alt="" />
+					<span>400-00-17940</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--固定的帮助按钮-->
+	<div class="help_fixed_icon"></div>
+	<!--回到顶部按钮-->
+	<div class="backTop">
+		<img src="../imgs/top/totop.png"/>
+	</div>
+</div>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		if(document.title == "果粒网-团队力量超乎想象"||document.title == "果粒网-查路线"){
+			$(".help_fixed_icon").css({"display":"block"});
+		}
+		var h = parseInt(window.innerHeight * 0.4);
+		$(window).scroll(function(){
+			if($(document).scrollTop() >= h){
+				$(".backTop").show(200);
+			}else{
+				$(".backTop").hide(200);
+			}
+		})
+		$(".backTop").on("click",function(){
+		 $('body,html').animate({scrollTop:0},500);
+		})
+	});
+</script>
+

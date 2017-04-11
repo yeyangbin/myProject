@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+.about_pagename{
+	background: url(../imgs/about_bg_long.png) no-repeat center top;
+	height: 135px;
+}
+.about_pagename>.wrap-a{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.about_pagename h2{
+	line-height: 135px;
+	color: #fff;
+	font-size: 36px;
+}
+.agree_body{
+	background-color: rgb(246,246,246);
+   border: 1px solid rgb(246,246,246);
+}
+.agree_box{
+	  width: 1200px;
+	  margin: 60px auto 60px;
+	  margin-top: 60px;
+	  background: white;
+	  border: 1px solid #ddd;
+}
+.agree_box .agree_text{
+    padding: 100px 120px 110px;
+    color: #5a5a5a;
+    line-height: 1.7em;
+}

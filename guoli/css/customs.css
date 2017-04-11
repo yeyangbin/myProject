@@ -1,0 +1,125 @@
+#custom_content {
+    padding-top: 520px;
+    min-height: 700px;
+    background: url("../imgs/customs/dingzhi_pagebg.jpg") no-repeat center top;
+}
+#custom_content .dz_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    zoom: 1;
+}
+.dz_wrap .left_w {
+    float: left;
+    width: 880px;
+}
+.left_w .dz_form {
+    padding: 0 30px;
+}
+#dzform h3 {
+    font-size: 1.833rem;
+    color: #f28000;
+    line-height: 100px;
+    border-bottom: 1px solid #eee;
+    font-weight: normal;
+}
+#dzform h3 > span {
+    font-size: 1.133rem;
+    padding-left: 20px;
+    color: #5a5a5a;
+}
+#dzform .must_fill {
+    color: #f28000;
+}
+#dzform > div ul li {
+    line-height: 38px;
+    padding: 12px 0;
+}
+#dzform > div label {
+    display: inline-block;
+    width: 120px;
+    font-size: 0.9em;
+}
+#dzform > div ul li input[type=text],
+#dzform > div ul li input[type=number],
+#dzform > div ul li input[type=email]{
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-size: 1.133rem;
+    padding: 8px;
+}
+#dzform > div ul li > span{
+    display: inline-block;
+    width: 16%;
+    font-size: 0.9em;
+}
+#dzform > div ul li{
+	position: relative;
+}
+#dzform input[type=submit] {
+    display: block;
+    width: 165px;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 44px;
+    border: 1px solid #f28000;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f39529), to(#f28000));
+    background-color: #f28000;
+    font-weight: bold;
+    margin: 60px auto 18px;
+    -webkit-appearance: push-button;
+}
+
+
+.dz_wrap .right_w {
+    float: right;
+    width: 300px;
+}
+.right_w h3 {
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fafafa), to(#f6f6f6));
+    background-color: #f6f6f6;
+}
+.process > div {
+    padding: 20px;
+}
+.process dl {
+    margin-top: 20px;
+    line-height: 2rem;
+}
+.right_w .consultant {
+    line-height: 0;
+}
+#dzform > div ul li >  .tips_input{
+	color:red;
+	box-sizing: border-box;
+	top: 14px;
+	left: 300px;
+	height: 34px;
+	width: 160px;
+	font-size: 1.133rem;
+	display: inline-block;
+	position: absolute;
+	font-size: 1em;
+}
+.submit_out{
+	margin-left: 320px;
+	margin-bottom: 18px;
+    width: 165px;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 44px;
+    border: 1px solid #f28000;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f39529), to(#f28000));
+    background-color: #f28000;
+    font-weight: bold;
+}

@@ -1,0 +1,270 @@
+/******************index页面 轮播图开始*********************/
+#center{
+	width: 100%;
+	overflow: hidden;
+}
+.slider_box{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slider_box .slider{
+	width: 100%;
+	display: none;
+}
+.slider_box .slider img{
+	width: 100%;
+	vertical-align:top;
+}
+.slider_box ul{
+	height:20px;
+	left: 42%;
+	bottom:6%;
+	position: absolute;
+	width: 200px;
+	overflow: hidden;
+	text-align: center;
+}
+.slider_box ul li{
+	margin-right: 15%;
+	float: left;
+	height: 80%;
+	width: 8%;
+	border: 2px  solid white;
+	opacity: 0.4;
+	border-radius: 50%;
+	
+}
+.slider_active{
+	background-color: white;
+}
+/********步骤栏开始*********/
+.c_steps{
+	width: 100%;
+	height: 111px;
+	border-bottom: 1px solid #ddd;
+	background-color: white;
+}
+.steps_box{
+	margin: 0 auto;
+	width: 1200px;
+	height: 81px;
+	padding-top: 30px;
+}
+#selects{
+	width: 100%;
+	height: 1080px;
+}
+.selects_wrap{
+	margin: 0 auto;
+	width: 1200px;
+	height: 100%;
+}
+.items_box{
+	width: 100%;
+	height: 100%;
+}
+.items_box ul{
+	width: 100%;
+	height: 860px;
+	overflow: hidden;
+}
+.selects_wrap h1{
+	text-align: center;
+	height: 130px;
+	line-height: 130px;
+}
+.items_box ul a li{
+	background-color: white;
+	width: 285px;
+	height: 400px;
+	float: left;
+	margin: 0 6px 16px 6px;
+	transition: all 0.4s;
+}
+.items_box ul a li img{
+	width: 285px;
+	height: 180px;
+	vertical-align: top;
+}
+.items_box ul a li h3{
+	color: #aaa;
+	margin:18px;
+	display: inline-block;
+}
+.items_box ul a li h4{
+	color:#5a5a5a;
+	margin-left: 20px;
+	font-size: 1.1em;
+}
+.items_box ul a li p{
+	margin-top: 60px;
+	text-align:center;
+	color: #f28000;
+}
+.items_box ul a li p span{
+	font-size: 1.6em;
+}
+.items_box ul a li:hover{
+	box-shadow:1px 1px 15px gray;
+}
+.selects_wrap .more_road{
+	transition: all 0.3s;
+	display: block;
+	width:220px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+	font-size: 1.2em;
+	color: #5a5a5a;
+}
+.selects_wrap .more_road:hover{
+	box-shadow:0px 5px 10px gray;
+	-o-box-shadow:0px 5px 10px gray;
+	-webkit-box-shadow:0px 5px 10px gray;
+	-ms-box-shadow:0px 5px 10px gray;
+	-moz-box-shadow:0px 5px 10px gray;
+}
+#buildTeam{
+	width: 100%;
+	height: 595px;
+    background: url(../imgs/homepage_bg_tj.jpg) no-repeat center top;
+}
+#buildTeam ul{
+	width: 1220px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#buildTeam h1{
+	height: 130px;
+	line-height: 130px;
+	text-align: center;
+	color: white;
+	font-size: 2.6em;
+}
+#buildTeam ul a li{
+	float: left;
+	width: 275px;
+	height: 355px;
+	padding: 10px 0 0 10px;
+	background: rgba(255,255,255,0.5);
+	margin-right: 10px;
+	transition: all 0.2s;
+	-o-transition:all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+#buildTeam ul a li img{
+	width: 265px;
+	height: 265px;
+}
+#buildTeam ul a li h3{
+	text-align:center;
+	height: 70px;
+	line-height: 70px;
+}
+#buildTeam ul a li:hover{
+	background-color: white;
+}
+#star_lead{
+	width: 100%;
+	height: 660px;
+    background: #f2efe8 url(../imgs/homepage_bg_guide.jpg) no-repeat center top;
+}
+#star_lead h1{
+	text-align: center;
+	height: 130px;
+	line-height: 130px;
+	color: #5a5a5a;
+}
+.star_box{
+	width: 1220px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.move_box{
+	width:3660px;
+	height: 400px;
+	position:absolute;
+	left:0;
+	top:0;
+	transition: all 1s;
+	-o-transition:all 1s;
+	-webkit-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+}
+.star_slider {
+	width: 1220px;
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.star_slider .person_item{
+	width: 285px;
+	height: 400px;
+	float: left;
+	background-color: white;
+	margin-right: 19px;
+}
+.person_item h3{
+	text-align: center;
+}
+.person_item p{
+	margin: 10px 10px 20px 10px;
+}
+.person_item div{
+	text-align: center;
+	font-size: 1.2em;
+}
+.person_item #custom{
+	color:#f28000;
+}
+.person_pic{
+	width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    overflow: hidden;
+    margin: 40px auto 0;
+}
+.star_slider_two{
+	left: 1220px;
+}
+.star_slider_three{
+	left: 2440px;
+}
+.star_lead_btns{
+	width: 100px;
+	height: 30px;
+	margin: 25px auto;
+	overflow: hidden;
+}
+.star_lead_btns div{
+	float: left;
+	cursor: pointer;
+}
+.btn_left{
+	width: 50px;
+	height: 30px;
+	background: url(../imgs/guidestar-arrow.png) no-repeat 0 0;
+}
+.btn_right{
+	width: 50px;
+	height: 30px;
+	background: url(../imgs/guidestar-arrow.png) no-repeat -50px 0;
+}
+.btn_left:hover{
+	background: url(../imgs/guidestar-arrow.png) no-repeat 0 -30px;
+}
+.btn_right:hover{
+	background: url(../imgs/guidestar-arrow.png) no-repeat -50px -30px;
+}
+
+
