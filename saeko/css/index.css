@@ -1,0 +1,49 @@
+/*
+ * Created by pc on 2017/3/21.
+*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+}
+ul,li,ol {
+    list-style: none;
+    list-style-image: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+}
+body {
+    color: #141412;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr.hrline {
+    border: none;
+    display: block;
+    border-bottom: #f6f6f6 2px solid;
+    height: 0px;
+    background: 0;
+    line-height: 0;
+    font-size: 0;
+    max-width: 940px;
+    margin: 0 auto;
+}
