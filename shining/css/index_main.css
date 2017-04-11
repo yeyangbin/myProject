@@ -1,0 +1,57 @@
+#w{
+	min-width: 588px;	
+}
+/*----------头部样式的区别布局的部分----------*/
+#header #header_w .header_nav .nav_items:first-child a{
+	border: 1px solid #a8a8a8;
+	color: white;
+}
+/*----------此页面主体样式----------*/
+
+/*主体部分样式*/
+#contenter{
+	width: 100%;
+	padding-bottom: 1em;
+}
+#contenter #contenter_w{
+	width: 980px;
+	min-width: 960px;
+	margin: 0 auto;
+	border-top: 1px solid #bfbfbf;
+	overflow: hidden;
+}
+#contenter #contenter_w .service{
+	width: 100%;
+}
+#contenter #contenter_w .service .service_list{
+	height: 10em;
+	border-bottom: 1px solid #bfbfbf;
+}
+#contenter #contenter_w .service .service_list li{
+	height: 100%;
+	float: left;
+}
+#contenter #contenter_w .service .service_list li.service_text{
+	width: 34%;
+	text-align: left;
+	padding-left: 2%;
+}
+#contenter #contenter_w .service .service_list:nth-child(2) li.service_text{
+	padding-right: 2%;
+	text-align: right;
+}
+#contenter #contenter_w .service .service_list li.service_text h6{
+	font-size: 1.875em;
+	padding-top: .5em;
+}
+#contenter #contenter_w .service .service_list li.service_img{
+	width: 588px;
+}
+#contenter #contenter_w .service .service_list li.service_img a img{
+	width: 100%;
+	height: 100%;
+}
+#contenter #contenter_w .service .service_list li.service_border{
+	width: 1.2em;
+	background: rgba(176, 176, 176, 1);
+}

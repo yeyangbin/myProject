@@ -1,0 +1,84 @@
+/*----------头部样式的区别布局的部分----------*/
+#header #header_w .header_nav .nav_items:last-child a{
+	border: 1px solid #a8a8a8;
+	color: white;
+}
+/*-----本页面主体部分样式-----*/
+#contenter{
+	position: relative;
+	min-width: 980px;
+	width: 100%;
+	background: url("../images/contact_bg.png") no-repeat 50% 68px;
+	background-color: #f8f8f8;
+}
+#contenter #contenter_w{
+	width: 100%;
+	padding: 7em 0 17em 0; 
+}
+#contenter #contenter_w .contact_person{
+	text-align: center;
+	line-height: 27px;
+	margin-bottom: 28px;
+}
+#contenter #contenter_w>.contact_person b,
+#contenter #contenter_w>.contact_email b{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#contenter #contenter_w>.contact_person span,
+#contenter #contenter_w>.contact_email span{
+	color: #595757;
+	font-size: 1.1em;
+}
+#contenter #contenter_w>div.contact_person>span{
+	font-weight: bold;
+}
+#contenter #contenter_w .contact_email{
+	text-align: center;
+	line-height: 26px;
+	padding-bottom: 5em;
+}
+#contenter #contenter_w .contact_email img{
+	width: 32px;
+	vertical-align: top;
+	margin-right: 7px;
+}
+#contenter #contenter_w .contact_tel{
+	width: 75%;
+	padding-left: 23%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#contenter #contenter_w .contact_tel div,
+#contenter #contenter_w .contact_tel div img,
+#contenter #contenter_w .contact_tel>div>span{
+	float: left;
+	font-size: .9em;
+	color: #585757;
+}
+#contenter #contenter_w .contact_tel>div>span{
+	margin-left: 5px;
+}
+#contenter #contenter_w .contact_tel div:nth-child(1){
+	width: 25%;
+}
+#contenter #contenter_w .contact_tel div:nth-child(2){
+	width: 20%;
+}
+#contenter #contenter_w .contact_tel div:nth-child(3){
+	width: 50%;
+}
+#contenter #contenter_w>div:last-child{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+#contenter #contenter_w>div:last-child img{
+	width: 100%;
+}
+
+/*----------尾部样式补充----------*/
+#footer #footer_w{
+	padding-top: 35px;
+	background: #f8f8f8;
+}

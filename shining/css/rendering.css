@@ -1,0 +1,136 @@
+/*----------头部样式的区别布局的部分----------*/
+#header #header_w .header_nav .nav_items:nth-child(3) a{
+	border: 1px solid #a8a8a8;
+	color: white;
+}
+/*--------- 主体样式部分 ----------*/
+#contenter{
+	width: 100%;
+}
+#contenter #contenter_w{
+	width: 100%;
+}
+#contenter #contenter_w .img_scroll{
+	position: relative;
+}
+#contenter #contenter_w .img_scroll>.scroll_img{
+	position: relative;
+}
+#contenter #contenter_w .img_scroll>.scroll_img>a{
+	width: 100%;
+	height: 100%; 
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+}
+#contenter #contenter_w .img_scroll>.scroll_img img{
+	width: 100%;
+	opacity: 0;
+	transition: all .2s linear;
+}
+#contenter #contenter_w .img_scroll>.scroll_img>a>.img1{
+	width: 100%;
+	opacity: 1;
+}
+#contenter #contenter_w .img_scroll>.scroll_img>a:nth-child(2),
+#contenter #contenter_w .img_scroll>.scroll_img>a:nth-child(3){
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#contenter #contenter_w .img_scroll>.dots{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+#contenter #contenter_w .img_scroll>.dots>span{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 5px;
+	background: #8291a0;
+	cursor: pointer;
+}
+#contenter #contenter_w .img_scroll>.dots>.dot{
+	background: #cfdb00;
+}
+
+#contenter #contenter_w .waterfall{
+	width: 100%;
+	position: relative;
+}
+#contenter #contenter_w .waterfall ul{
+	width: 98%;
+	height: 100%;
+	/*height: 3068px;*/
+	margin: 0 auto;
+	margin-top: 10px;
+	position: absolute;
+	/*overflow: hidden;*/
+	/*display: inline-block;*/
+}
+#contenter #contenter_w .waterfall ul li{
+	width: 25%;
+	padding: .3%;
+	float: left;
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+#contenter #contenter_w .waterfall ul li a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+#contenter #contenter_w .waterfall ul li a img{
+	width: 100%;
+	float: left;
+}
+#contenter #contenter_w .waterfall ul li a span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	opacity: 0;
+	transition: all .3s linear;	
+}
+#contenter #contenter_w .waterfall ul li:hover a span{
+	opacity: 1;
+}
+#contenter #contenter_w .waterfall ul li a span:after,
+#contenter #contenter_w .waterfall ul li a span:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background: rgba(0, 0, 0, .5);
+}
+#contenter #contenter_w .waterfall ul li a span:after{
+	border: 3px solid white;
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;
+	top: calc(45% - 6px);
+	left: calc(45% - 6px);
+}
+#contenter #contenter_w .waterfall ul li a span:before{
+	border: 2px solid white;
+	top: calc(45% + 8px);
+	left: calc(45% + 13px);
+	height: 10px;
+	background: #fff;
+	transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+

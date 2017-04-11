@@ -1,0 +1,112 @@
+#w{
+	min-width: 588px;	
+}
+/*----------头部样式的区别布局的部分----------*/
+#header #header_w .header_nav .nav_items:nth-child(4) a{
+	border: 1px solid #a8a8a8;
+	color: white;
+}
+/*---------- 主体样式部分 -----------*/
+#contenter #contenter_w{
+	width: 100%;
+}
+#contenter #contenter_w .vedio_show{
+	width: 100%;
+	background: #1b1b1b;
+	position: relative;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+#contenter #contenter_w .vedio_show>div{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1127px;
+	position: relative;
+	font-size: 0;
+}
+#contenter #contenter_w .vedio_show>div>a{
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+}
+#contenter #contenter_w .vedio_show>div>a>img:first-child{
+	width: 100%;
+}
+#contenter #contenter_w .vedio_show>div>a>img:last-child{
+	position: absolute;
+	width: 5%;
+	top: 41%;
+	left: 49%;
+}
+#contenter #contenter_w .vedio_show span{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	display: block;
+	background: rgba(0, 0, 0, .6);
+	font-size: 1.4em;
+	padding: 1.64% 0 .74% 0;
+	color: rgba(180, 180, 180, .6);
+}
+#contenter #contenter_w .works_show{
+	overflow: hidden;
+	padding-bottom: 60px; 
+}
+#contenter #contenter_w .works_show ul{
+	width: 100%;
+	max-width: 1127px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+#contenter #contenter_w .works_show ul li{
+	float: left;	
+	width: 31%;
+	margin: 0 1.1%;
+}
+#contenter #contenter_w .works_show ul li a{
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+}
+#contenter #contenter_w .works_show ul li a img:nth-child(1){
+	width: 100%;
+}
+#contenter #contenter_w .works_show ul li a img:nth-child(2),
+#contenter #contenter_w .works_show ul li a img:nth-child(3){
+	position: absolute;
+	top: calc(50% - 10.5px);
+	left: calc(50% - 12.5px);
+	transition: all .2s linear;
+}
+#contenter #contenter_w .works_show ul li a img:nth-child(2){
+	opacity: 0;	
+}
+#contenter #contenter_w .works_show ul li:hover a img:nth-child(2){
+	opacity: 1;	
+}
+#contenter #contenter_w .works_show ul li a img:nth-child(3){
+	opacity: 1;	
+}
+#contenter #contenter_w .works_show ul li:hover a img:nth-child(3){
+	opacity: 0;	
+}
+#contenter #contenter_w .works_show ul li span{
+	display: inline-block;
+	width: 100%;
+	padding: 7% 0;
+	color: #909090;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

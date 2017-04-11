@@ -1,0 +1,39 @@
+#w{
+	min-width: 588px;	
+}
+/*----------头部样式的区别布局的部分----------*/
+#header #header_w .header_nav .nav_items:nth-child(2) a{
+	border: 1px solid #a8a8a8;
+	color: white;
+}
+/*---------- 主体样式 ----------*/
+#contenter #contenter_w{
+	width: 100%;
+	padding-bottom: 2em;
+	background: url("../images/world_map.png") center center no-repeat;
+	background-color: #e3e3e3;
+	position: relative;
+}
+#contenter #contenter_w .about_us{
+	width: 490px;
+	padding-top: 100px;
+	padding-left: 10px;
+}
+#contenter #contenter_w .about_us h3{
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+#contenter #contenter_w .about_us p{
+	padding-left: 80px;
+	padding-bottom: 2em;
+	font-size: medium;
+	line-height: 2em;
+}
+#contenter #contenter_w .share_logo ul{
+	overflow: hidden;
+}
+#contenter #contenter_w .share_logo ul li{
+	float: left;
+	margin-right: 59px;
+	margin-bottom: 10px;
+}
