@@ -1,0 +1,307 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,
+body,
+#page{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+#page{
+	position: relative;
+	background: url("../img/bj.png") no-repeat 0 0 / 100% 100%;
+	/*display: none;*/
+}
+#page>#head{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	max-width: 640px;
+	margin: 0 auto;
+}
+#head #logo,
+#head .new,
+#head .car,
+#head .text1,
+#indexcont .text2,
+#indexcont .text3,
+#indexcont .text4,
+#indexbtn .startgame{
+	position: absolute;
+}
+#head #logo{
+	width: 28.125%;
+	top: 2.4648%;
+	left: 3.125%;
+}
+#head .new{
+	width: 27.657%;
+	top: 3.345%;
+	right: 3.907%;
+}			
+#head .carA{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#head .car{
+	width: 69.53125%;	
+	top: 15.1408%;
+	left: 3.90625%;		
+	-webkit-animation: carAni 2s linear;	
+}
+/*#page .lz{
+	-webkit-transform: scale(0.5) rotatey(60deg);				
+	position: absolute;
+}*/
+@-webkit-keyframes carAni{
+	from{
+		top: 5.1408%;
+		left: -90%;;
+	}
+	to{
+		top: 15.1408%;
+		left: 3.90625%;
+	}
+}
+#head .text1{
+	width: 31.719%;
+	top: 8.187%;
+	right: 3.594%;
+}
+#indexcont .text2{
+	width: 75.46875%;
+	top: 64.8768%;
+	left: 13.4375%;
+}
+#indexcont .text3{
+	width: 72.1857%;
+	top: 45.3345%;		
+	left: -90%;		
+	-webkit-animation: txt3 2s 2s linear forwards;
+}
+@-webkit-keyframes txt3{
+	to{
+		left: 12.96875%;
+	}
+}
+#indexcont .text4{		
+	width: 100%;		
+	right: -150%;
+	-webkit-animation: txt4 2s 2s linear forwards;
+}
+#indexcont .txt4{
+	position: absolute;
+	width: 42.031%;
+	top: 37.852%;
+	right: 7.656%;
+	-webkit-animation: sca 2s 4.01s linear infinite;
+}
+@-webkit-keyframes txt4{
+	to{
+		right: 7.656%;
+	}
+}
+@-webkit-keyframes sca{
+	0%{
+		-webkit-transform: scale(0.9);
+	}
+	50%{
+		-webkit-transform: scale(1.1);
+	}
+	100%{
+		-webkit-transform: scale(0.9);
+	}
+}
+
+#indexbtn .startgame{
+	width: 67.96875%;
+	left: 15.78125%;
+	bottom: 4.4894%;
+}
+
+
+
+
+#game{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(#75b60b,#124603);
+	display: none;
+}
+.gamebox{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+#gamemask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	/*z-index: 100;*/
+	background: rgba(122,122,122,.5);
+}
+#gamemask #gamerule{
+	width: 80%;
+	position: absolute;
+	top: 17.6937%;
+	left: 10.3125%;
+}
+#gamemask .gameclose{
+	position: absolute;
+	width: 9.0625%;
+	right: 7.1875%;
+	top: 16.7253%;
+}
+#overbtn{
+	position: absolute;
+	bottom: 0;
+}
+#overbtn .startgame{
+	width: 67.96875%;
+	left: 15.78125%;
+	bottom: 4.4894%;
+}
+.share,
+.again,
+.focus,
+.test_drive{
+	position: absolute;
+	width: 67.96875%;
+	left: 15.78125%;
+}
+.share,.focus{
+	bottom: 17.077%;
+}
+.again,.test_drive{
+	bottom: 8.8908%;
+}
+
+#over{
+	width: 100%;
+	height: 100%;
+	background: url("../img/overbj.png") no-repeat 0 0 / 100% 100%;
+}
+#overscore{
+	position: absolute;
+	width: 100%;
+	color: white;
+	height: 16.37324%;
+	top: 37.32394%;
+	text-align: center;
+}	
+#overscore>p:first-child{
+	font-size: 1.8em;
+}#overscore>p:first-child span{
+	font-size: 1.8em;
+	color: #e5fa34;
+}
+#overscore>p:last-child{
+	font-size: 1.4rem;
+}
+.overtxt1{
+	position: absolute;
+	width: 68.90625%;
+	top: 61.0915%;
+	left: 15.78125%;
+}
+.overtxt0{
+	position: absolute;
+	width: 54.375%;
+	top: 55.6338%;
+	left: 22.65625%;
+}
+.sharemask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.sharemask .sharepyq{
+	position: absolute;
+	width: 87.5%;
+	top: 2.7289%;
+	left: 6.40625%;
+}
+
+#not_winning{
+	width: 100%;
+	height: 100%;
+	background: url("../img/lobj.png") no-repeat 0 0 / 100% 100%;
+}
+.nowintxt1{
+	position: absolute;
+	width: 82.8125%;
+	top: 40.493%;
+	left: 10.78125%;
+}
+.focusmask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	display: none;
+}
+.focusmask .focuswx{
+	position: absolute;
+	width: 87.5%;
+	top: 2.7289%;
+	left: 6.40625%;
+}
+
+#winning{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url("../img/lobj.png") no-repeat 0 0 / 100% 100%;
+}
+#winning p{
+	position: absolute;
+	width: 80.9375%;
+	left: 9.6875%;
+	top: 41.8134%;
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	color: white;
+}
+#winning p span{
+	color: #e5fa34;
+}
+#winning p span:nth-child(1){
+	font-size: 2em;	
+}
+#winning p .gift{
+	font-size: 2em;
+}
+
+#page{
+	display: block;
+	/*display: none;*/
+}
+#game{
+	/*display: block;*/
+	display: none;
+}
+#over{
+	/*display: block;*/
+	display: none;
+}
+#not_winning{
+	/*display: block;*/
+	display: none;
+}
+#winning{
+	display: none;
+}
