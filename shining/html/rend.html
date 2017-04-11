@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>响应式瀑布流</title>
+		<style type="text/css">	
+			.box{
+				margin: 0 auto;
+				height: 2000px;
+				border: 1px red solid;
+				position: relative;
+			}
+			div img{
+				position: absolute;
+				width: 200px;
+				background-color: lightblue;
+				font-size: 50px;
+				text-align: center;
+				color: white;
+				transition: all 1s linear;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="../images/1.jpg" alt="">
+		</div>
+	</body>
+	<script type="text/javascript">
+		function randomH(min,max){ 
+			return Math.round(Math.random()*(max - min) + min);
+		}
+
+
+		var box = document.querySelector(".box");
+		isFirst = true;	
+		var cols = parseInt(window.innerWidth / 225);
+		console.log(cols);
+		function createDiv(){
+			var count = -1;
+			// 创建数组，保存四列的总高度，用于插入的时候找到最短列插入。
+			
+			
+			var colHeight = new Array(cols);
+			for (var i = 0; i < cols; i++) {
+				colHeight[i] = 0;
+			}
+
+			box.style.width = 210 * cols - 10 + "px"; 
+
+			createImg();
+			function createImg(){	
+			count++;		
+			// for(var i = 0; i < 40; i++){
+				if (isFirst) {
+					// 创建div
+					var div = document.createElement("img");
+					div.src = "../images/" + parseInt(randomH(1,15)) + ".jpg";
+					console.log("start");
+					div.onload = function(){
+						colHeight[minIndex] += div.offsetHeight + 10;	
+						if(count > 40){
+							isFirst = false;
+							return;
+						}
+						createImg();
+					}
+
+					// 把div的高度加到当前最短列的总高度里。
+					box.appendChild(div);
+				}else{					
+					var div = box.children[count];
+				}
+				
+
+				// 找一个最短列插入div
+				var minIndex = 0;
+				for(var j = 0; j < colHeight.length; j++){
+					if (colHeight[minIndex] > colHeight[j]) {
+						minIndex = j;
+					}
+				}
+
+
+				div.style.left = 210 * minIndex + "px";
+				div.style.top = colHeight[minIndex] + "px";
+				if(!isFirst){
+					if(count >= 40){
+						return;
+					}
+					colHeight[minIndex] += div.offsetHeight + 10;
+					createImg();
+
+				}
+			}
+			// isFirst = false;
+
+		}
+		createDiv();
+
+
+		// 窗口发生变化的时候，执行的函数。
+		window.onresize = function(){
+			if (cols != parseInt(window.innerWidth / 225)) {
+				cols = parseInt(window.innerWidth / 225);
+				createDiv();
+			}
+			
+		}
+
+	</script>
+</html>
